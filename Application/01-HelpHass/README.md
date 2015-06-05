@@ -1,12 +1,12 @@
 # Help Hass meet his friends
 
-Hass has a problem. He has a meeting with his friends, but he's a little too late, so he'll have to travel by train. He knows the timetable of the transport, but there isn't enough time to calculate the fastest way possible.
+Hass has a problem. He has a meeting with his friends, but is a little too late, so he'll have to travel by train. Hass knows the schedule, but doesn't have enough time to figure out the fastest route.
 
-Help Hass to decide which trains to pick!
+Help Hass decide which trains to pick!
 
-* Every train travels 5 minutes from its first to its last stop.
-* Hass is living near the stop H and he needs to arrive at stop L.
-* There will always be a way to get to the destination.
+* Every train travels 5 minutes from its first to its last station.
+* Hass is living near the station H and he needs to get to station L.
+* There will always be a way to reach the destination.
 
 ## Examples
 ```

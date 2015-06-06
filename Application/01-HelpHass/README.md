@@ -22,7 +22,7 @@ Input:
 H A
 K L
 S K
-A K
+A S
 Output:
 H A S K L
 ```

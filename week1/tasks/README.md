@@ -1,18 +1,18 @@
 ## Tasks
 
-### 1. Even
+### 01. Even
 ```
 even' 42 -> True
 even' 7 -> False
 ```
 
-### 2. Odd
+### 02. Odd
 ```
 odd' 42 -> False
 odd' 7 -> True
 ```
 
-### 3. Calculate BMI
+### 03. Calculate BMI
 ```
 bmi 150 40 -> 17.8
 ```

@@ -29,7 +29,7 @@
 * GHCi - interaction environment
 
 ## Setting up
-[Notes on setting up](Setup/README.md)
+[Notes on setting up](../Setup/README.md)
 
 ## Haskell's basics
 * (Some) Types: Int, Integer, Float, Double, Bool, Char, String, Tuples

@@ -41,7 +41,7 @@
 ## Time to play!
 * `:l` and `:r` in GHCi
 
-[Tasks](tasks/README.md#01-even)
+## [Tasks](tasks/README.md#01-even)
 
 ## Back to basics!
 * Type signatures (and using `:t` in GHCi)
@@ -51,4 +51,4 @@
 * Guards
 * `where`
 
-[More tasks](tasks/README.md#11-type-signatures)
+## [More tasks](tasks/README.md#11-type-signatures)

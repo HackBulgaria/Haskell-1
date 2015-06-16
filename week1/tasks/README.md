@@ -13,6 +13,9 @@ odd' 7 -> True
 ```
 
 ### 03. Calculate BMI
+
+BMI is calculated by the following formula -> bmi height weight = height / (weight^2)
+
 ```
 bmi 150 40 -> 17.8
 ```

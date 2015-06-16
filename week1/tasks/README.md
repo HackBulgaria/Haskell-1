@@ -138,8 +138,8 @@ product' [1, 2, 10] -> 20
 ```
 ### 24. Multiply lists
 ```
-mult [1, 2, 3] [2, 3, 4] -> [2, 6, 12]
-mult [3] [1, 2, 3] -> [3]
+multLists [1, 2, 3] [2, 3, 4] -> [2, 6, 12]
+multLists [3] [1, 2, 3] -> [3]
 ```
 
 ### 25. Number to string

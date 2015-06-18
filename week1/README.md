@@ -97,6 +97,7 @@ triangleArea a b c = sqrt (p * (p - a) * (p - b) * (p - c))
 
 ## Hoogle
 * [Hoogle](https://www.haskell.org/hoogle/) is the Haskell API search engine
+
 ### Why is it so good?
 * searching by function names
 * searching by function type signatures

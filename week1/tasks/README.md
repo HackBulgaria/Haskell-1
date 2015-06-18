@@ -121,10 +121,13 @@ member 2 [0, 1, 3] -> False
 ```
 
 ### 21. Is the list a fibonacci sequence?
+
+Edit: Assume that the input we'll be correct, i.e. will be a list
+starting from 0 and will have more than two elements.
 ```
-isFibonacciSequence [1, 1] -> True
+isFibonacciSequence [0, 1, 1] -> True
 isFibonacciSequence [0, 1, 1, 2, 3, 5, 8, 13] -> True
-isFibonacciSequence [1, 1, 1, 2] -> False
+isFibonacciSequence [0, 1, 1, 1, 2] -> False
 ```
 
 ### 22. Get the sum of a list

@@ -35,20 +35,68 @@
 * (Some) Types: Int, Integer, Float, Double, Bool, Char, String, Tuples
 * Operators and expressions: `+ - / ^ (mod and div)`
 * What does a function definition look like?
+```haskell
+myFunction arg1 arg2 ... = doing something with the arguments
+```
 * `if then else`
+```haskell
+evenOrOdd x = if even x then "even" else "odd"
+```
 * `let` in GHCi
+```haskell
+let x = 42
+let f x = x + 42
+```
 
 ## Time to play!
-* `:l` and `:r` in GHCi
+* `:l` and `:r` in GHCi (:load and :reload)
 
 ## [Tasks](tasks/README.md#01-even)
 
 ## Back to basics!
-* Type signatures (and using `:t` in GHCi)
+* Type signatures (and using `:t` in GHCi (:type))
+```haskell
+function :: Type1 -> Type2 -> ... -> TypeN
+
+evenOrOdd :: Integer -> String
+evenOrOdd x = if even x then "even" else "odd"
+```
 * Lists (maybe the most used data structure in functional programming)
+```haskell
+let sevenFibs = [0, 1, 1, 2, 3, 5, 8]
+```
 * Basic pattern matching
+```haskell
+tellMeWhats :: String -> Integer
+tellMeWhats "the meaning of life" = 42
+tellMeWhats _                     = error "I haven't the slightest idea."
+
+tail' (_:xs) = xs
+tail' _      = error "The empty list has no tail.."
+```
 * Basic recursion on lists
+```haskell
+last' [x]    = x
+last' (_:xs) = last' xs
+last' _      = error "The empty list has no elements.."
+```
 * Guards
+```haskell
+evenOrOdd :: Integer -> String
+evenOrOdd x | even x    = "even"
+            | otherwise = "odd"
+```
 * `where`
+```haskell
+triangleArea :: Double -> Double -> Double -> Double
+triangleArea a b c = sqrt (p * (p - a) * (p - b) * (p - c))
+  where p = (a + b + c) / 2
+```
 
 ## [More tasks](tasks/README.md#11-type-signatures)
+
+## Hoogle
+* [Hoogle](https://www.haskell.org/hoogle/) is the Haskell API search engine
+### Why is it so good?
+* searching by function names
+* searching by function type signatures

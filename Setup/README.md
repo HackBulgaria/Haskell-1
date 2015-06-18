@@ -26,3 +26,11 @@ au BufWritePost *.hs :GhcModCheckAndLintAsync
 * then [package control](https://packagecontrol.io/installation)
 * install SublimeHaskell plugin: In Sublime - Ctrl-Shift-P (Command Palette). Then write Install, pick Install Package, select SublimeHaskell.
 * Write `haskell` in the Command Palette to see all of the available options
+
+##### You can add the following to your sublime settings:
+```
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+
+```

@@ -136,6 +136,7 @@ Typeclasses gives us the benefits of dynamic typing in a safer form.
 
 ## Let us continue our journey with lists!
 * `["I", "am", "a", "list"]
+* (++) :: [a] -> [a] -> [a]
 * Ranges - `[1..10]`
 * More recursion over lists
 * List comprehensions, the beginning:

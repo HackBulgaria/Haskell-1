@@ -244,7 +244,7 @@ stringsToIntegers ["7", "42", "13"] -> [7, 42, 13]
 ### 41. Get the fibonacci numbers with the corresponding indices
 ```
 fibonaccis [0..5] -> [0, 1, 1, 2, 3, 5]
-fibonaccis [5, 10, 15] -> [5, 10, 610]
+fibonaccis [5, 10, 15] -> [5, 55, 610]
 ```
 
 Did you notice the pattern?

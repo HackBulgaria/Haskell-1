@@ -51,7 +51,7 @@ let f x = x + 42
 ## Time to play!
 * `:l` and `:r` in GHCi (:load and :reload)
 
-## [Tasks](tasks/README.md#01-even)
+## [Tasks](1-Beginner-Tasks/README.md#01-even)
 
 ## Back to basics!
 * Type signatures (and using `:t` in GHCi (:type))
@@ -93,7 +93,7 @@ triangleArea a b c = sqrt (p * (p - a) * (p - b) * (p - c))
   where p = (a + b + c) / 2
 ```
 
-## [More tasks](tasks/README.md#11-type-signatures)
+## [More tasks](1-Beginner-Tasks/README.md#11-type-signatures)
 
 ## Hoogle
 * [Hoogle](https://www.haskell.org/hoogle/) is the Haskell API search engine
@@ -144,7 +144,7 @@ Typeclasses gives us the benefits of dynamic typing in a safer form.
 let tuples = [(x, y) | x <- [1..10], y <- [1..10], x < y]
 ```
 
-## [Tasks again](tasks/README.md#27-is-valid-id?)
+## [Tasks again](1-Beginner-Tasks/README.md#27-is-valid-id)
 
 ## Higher-order functions!
 * Taking functions as arguments
@@ -194,5 +194,4 @@ doubleTuple tuple = transformTuple (*2) tuple
 ```
 * maps (applyToAll), filters (filterBy), folds (foldl and foldr <-> reduce and reduce')
 
-## [The last tasks for this week](tasks/README.md#38-return-a-function-which-multiplies-a-number-by-a-factor)
-)
+## [The last tasks for this week](1-Beginner-Tasks/README.md#38-return-a-function-which-multiplies-a-number-by-a-factor)

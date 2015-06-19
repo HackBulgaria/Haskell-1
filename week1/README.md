@@ -131,7 +131,7 @@ Typeclasses gives us the benefits of dynamic typing in a safer form.
 * Later on we will see how to define our own typeclasses!
 
 ## How can we move between decimals and floats when we don't have a cast?
-* `fromIntegral :: (Integral a, Num b) => a -> b
+* `fromIntegral :: (Integral a, Num b) => a -> b`
 * `truncate, round, ceiling, floor :: (Real a, Fractional a, Integral b) => a -> b`
 
 ## Let us continue our journey with lists!

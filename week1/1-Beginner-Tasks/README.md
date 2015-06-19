@@ -176,7 +176,7 @@ Use that you already know how to write type signatures to the polymorphic functi
 
 ### 30. Concatenate the lists
 ```
-concatenate [1, 2, 3] [2, 3, 4] -> [1, 2, 3, 2, 3, 4]
+concatenate [[1, 2, 3] [2, 3, 4]] -> [1, 2, 3, 2, 3, 4]
 ```
 
 ### 31. Take all elements of a list without the last one

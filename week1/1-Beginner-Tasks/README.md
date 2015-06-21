@@ -17,7 +17,7 @@ odd' 7 -> True
 BMI is calculated by the following formula -> bmi height weight = weight / (height^2)
 
 ```
-bmi 150 40 -> 17.8
+bmi 1.5 40 -> 17.8
 ```
 
 ### 04. Convert degrees to radians

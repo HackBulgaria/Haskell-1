@@ -15,6 +15,7 @@ odd' 7 -> True
 ### 03. Calculate BMI
 
 BMI is calculated by the following formula -> bmi height weight = weight / (height^2)
+Note: `bmi` takes as arguments height in centimeters and weight in kilos.
 
 ```
 bmi 150 40 -> 17.8

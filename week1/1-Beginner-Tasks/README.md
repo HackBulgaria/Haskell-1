@@ -280,31 +280,26 @@ odds' [1..10] -> [1,3,5,7,9]
 
 ### 47. Rewrite the functions using filterBy
 
-### 48. Get the product of a list
-```
-product' [1..5] -> 120
-```
-
-### 49. Concatenate the lists
+### 48. Concatenate the lists
 ```
 concat' [[1, 2, 3], [2, 3, 4], []] -> [1,2,3,2,3,4]
 ```
 
 These patterns..
 
-### 50. Reducing!
+### 49. Reducing!
 ```
 let sum'' = reduce (+) 0
 sum'' [1..10] -> 55
 ```
 
-### 51. Reduce in the other direction
+### 50. Reduce in the other direction
 ```
 (reduce (-) 0) [1..5] -> 0-1-2-3-4-5 -> -15
 (reduce' (-) 5) [1..5] -> 1-(2-(3-(4-(5-0)))) -> 3
 ```
 
-### 52. Zip with a function!
+### 51. Zip with a function!
 ```
 let zip'' = zipWith' (++)
 zip'' [1..3] [3..5] -> [(1, 3), (2, 4), (3, 5)]

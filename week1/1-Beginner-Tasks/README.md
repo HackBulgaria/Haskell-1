@@ -214,7 +214,7 @@ unzip' [("I", "surely"), ("do", "not"), ("like", "you")] -> (["I", "do", "like"]
 ### 36. Grouping
 ```
 group' [1, 1, 2, 2, 1, 1, 3] -> [[1, 1], [2, 2], [1, 1], [3]]
-group' [1..5] -> [1, 2, 3, 4, 5]
+group' [1..5] -> [[1], [2], [3], [4], [5]]
 ```
 
 ### 37. Generate all pythagorean triples

@@ -1,4 +1,7 @@
 # Functional programming - week 2
+Unfortunately, these week we didn't have day two, because I got ill :/
+
+## Day 1
  
 ## Notes and thoughts on style, conventions, etc...
 
@@ -164,71 +167,3 @@ implements a certain algorithm..
 Note: Use what's already written! (if you don't know, ask Hoogle)
 
 `map, filter, fold, fst, snd, reverse, length, zip, cycle...`
-
-## Data types once more..
-
-### The `data` keyword
-* Type constructors vs value constructors
-
-```haskell
-data BookType = Book String String Int
-    deriving (Show)
-
-> let myFavouriteBook = Book "A Study in Scarlet" "Sir Arthur Conan Doyle" 1887
-> myFavouriteBook
-Book "A Study in Scarlet" "Sir Arthur Conan Doyle" 1887
-> :t myFavouriteBook
-myFavouriteBook :: BookType
-
--- But more often:
-data Book = Book String String Int
-    deriving (Show)
-```
-* Pattern matching against a type
-```haskell
-bookTitle :: Book -> String
-bookTitle (Book title _ _) = title
-```
-* Remember the type synonyms?
-```haskell
-type Title  = String
-type Author = String
-type Year   = Int
-
-data Book = Book Title Author Year
-
-bookTitle :: Book -> Title
-```
-
-### The record syntax
-```haskell
-data Book = Book {
-    bookTitle  :: Title,
-    bookAuthor :: Author,
-    bookYear   :: Year
-  } deriving (Show)
-
--- Now we can create a Book like that:
-> let myBook = { bookYear = 1900, bookTitle = "title", bookAuthor = "author" }
-```
-* Check `:t bookTitle` in ghci. Haskell implemented all
-these functions for us! How convenient ^^
-
-### Algebraic Data Types
-* They do look a lot like unions
-```haskell
-data MyBool = MyTrue | MyFalse
-  deriving (Eq, Show)
-
-myNot :: MyBool -> MyBool
-myNot MyTrue = MyFalse
-myNot MyFalse = MyTrue
-```
-
-* Every value constructor can have zero or more arguments
-```haskell
-data IntList = Cons Int IntList | Empty
-  deriving (Show)
-```
-
-## [Task](3-DataTypes/README.md)

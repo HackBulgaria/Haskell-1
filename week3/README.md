@@ -61,7 +61,7 @@ data Book = Book {
   } deriving (Show)
 
 -- Now we can create a Book like that:
-> let myBook = { bookYear = 1900, bookTitle = "title", bookAuthor = "author" }
+> let myBook = Book { bookYear = 1900, bookTitle = "title", bookAuthor = "author" }
 ```
 * Check `:t bookTitle` in ghci. Haskell implemented all
 these functions for us! How convenient ^^

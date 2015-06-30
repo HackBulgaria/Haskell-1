@@ -22,8 +22,8 @@ You should map every pixel from the screen to a coordinate in the plane.
 ```
 screen -> (600, 600)
 
-pixelToCoordinate 0 0 ((-1.0, 1.0), (-1.0, 1.0)) -> (-1.0, -1.0)
-pixelToCoordinate 300 300 ((-1.0, 1.0), (-1.0, 1.0)) -> (0.0, 0.0)
+pixelToCoordinate 0 0 ((-1.0, 1.0), (1.0, -1.0)) -> (-1.0, -1.0)
+pixelToCoordinate 300 300 ((-1.0, 1.0), (1.0, -1.0)) -> (0.0, 0.0)
 ```
 
 ### Now implement the formula for `mandelbrot`!

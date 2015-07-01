@@ -1,3 +1,3 @@
 reducer :: (a -> b -> b) -> b -> [a] -> b
-reducer f acc xs@(x:_) = reducer f (f (last xs) acc) (init xs)
+reducer f acc (x:xs) = f x (reducer f acc xs)
 reducer _ acc _ = acc

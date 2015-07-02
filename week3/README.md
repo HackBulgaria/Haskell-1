@@ -15,7 +15,7 @@ Day 2
 * Properties in `.cabal` files
 
 ## [Try it yourself](./3-Fractals/README.md#let's-draw-some-fractals!)
-![Mandelbrot's Fractal](./mandelbrot.jpg)
+![Mandelbrot's Fractal](./mandelbrot.png)
 
 ## Data types once more..
 

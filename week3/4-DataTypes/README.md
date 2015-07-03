@@ -19,7 +19,7 @@ toList   :: IntList -> [Int]
 * getting information about an author
 
 A song should have:
-* title, author, genre, length
+* title, author, genre, length, album
 
 An author should have:
 * name, birth year, record label (if one)

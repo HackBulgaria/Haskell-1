@@ -54,6 +54,7 @@ Assign "sum" (Val 0)
 For (Assign "i" (Val 0))
     (Op (Var "i") Lt (Val 10))
     (Incr "i")
+    (Assign "sum" (Op (Var "sum") Plus (Var "i")))
 ```
 
 * You will have a state, which is represented by the following data types:

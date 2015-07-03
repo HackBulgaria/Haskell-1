@@ -2,7 +2,7 @@
 
 [Day 1](./README.md#day-1)
 
-Day 2
+[Day 2](./README.md#day-2)
  
 ## Day 1
 
@@ -84,3 +84,31 @@ data IntList = Cons Int IntList | Empty
 ```
 
 ## [Task](./4-DataTypes/README.md#01-an-intlist-library)
+
+## Day 2
+
+This time we'll be revising what we have learnt about data types.
+
+* defining new data types with `data` - type and value constructors
+* the record syntax
+* pattern matching value constructors
+
+## [Task](./4-DataTypes/README.md#02-implement-a-music-library)
+
+### Even more data types!
+
+* parameterised types
+
+```haskell
+data Shell a = An a
+             | Empty
+```
+
+* ADTs again, but this time with type variables! (what was an [ADT](./README.md#algebraic-data-types)?)
+
+```haskell
+data List a = Cons a IntList | Empty
+  deriving (Show)
+```
+
+## [Task](./4-DataTypes/README.md#03-a-polymorphic-list-library)

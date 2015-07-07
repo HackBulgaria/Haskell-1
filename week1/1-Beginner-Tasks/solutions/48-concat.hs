@@ -1,2 +1,3 @@
 concat' :: [[a]] -> [a]
-concat' = foldr (++) []
+concat' (x:xs) = x ++ concat' xs
+concat' _      = []

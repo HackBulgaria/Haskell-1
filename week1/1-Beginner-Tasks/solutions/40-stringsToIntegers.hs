@@ -1,4 +1,3 @@
-import Data.Char
-
 stringsToIntegers :: [String] -> [Int]
-stringsToIntegers = map read
+stringsToIntegers (s:ss) = read s : stringsToIntegers ss
+stringsToIntegers _      = []

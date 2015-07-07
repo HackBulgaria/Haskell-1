@@ -5,6 +5,7 @@
 * `dempty` - a Dionom should have an unit value
 * `dappend` - you could `dappend` two Dionoms and receive a Dionom as a result
 * `dconcat` - you could reduce a list of Dionoms to a single Dionom
+
 Note: Maybe we can provide a default implementation for some of the functions?
 
 ### 02. Which Dionom types come to your mind? Implement Dionom instances for these types!

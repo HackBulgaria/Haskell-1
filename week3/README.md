@@ -14,6 +14,29 @@
 * Cabal packages - `cabal install`
 * Properties in `.cabal` files
 
+#### The whole cabal workflow we used:
+```
+# updating the cabal's list of packages
+> cabal update
+
+# upgrading cabal to it's latest version
+> cabal install cabal-install
+
+# move to your module's directory, then
+> cabal init
+# is creating a new .cabal package file
+
+# creating a sandbox
+> cabal sandbox init
+
+# afterwards, you can freely install packages locally with 
+> cabal install
+
+# building and running an executable
+# while developing (like in the Fractal's module case)
+> cabal run
+```
+
 ## [Try it yourself](./3-Fractals/README.md#let's-draw-some-fractals!)
 ![Mandelbrot's Fractal](./mandelbrot.png)
 
@@ -100,6 +123,7 @@ This time we'll be revising what we have learnt about data types.
 * parameterised types
 
 ```haskell
+-- Maybe a
 data Shell a = An a
              | Empty
 ```
@@ -109,6 +133,15 @@ data Shell a = An a
 ```haskell
 data List a = Cons a IntList | Empty
   deriving (Show)
+```
+
+### We mentioned about the `case of` syntax:
+```haskell
+getJust :: Maybe a -> a
+getJust x = case x of
+            Just a  -> a
+            _       -> error "It's Nothing!"
+--          Nothing -> error "It's Nothing!"
 ```
 
 ## [Task](./4-DataTypes/README.md#03-a-polymorphic-list-library)

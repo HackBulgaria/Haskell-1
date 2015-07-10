@@ -113,3 +113,34 @@ The magic happens thanks to the `<-` operator.
 You can read it as **unboxing** the pure value from impure operation. This will extract the `String` from `IO String`. But there is a cost. You can only extract the `String` to give it to a pure function.
 
 But the funciton that uses `IO String` **must** return something from the `IO` type. We cannot escape.
+
+## A small program
+
+Lets have a program that reads one integer and prints the prime factorization of that integer:
+
+```haskell
+times :: Int -> Int -> Int
+times x y
+    | rem x y == 0 = 1 + times (div x y) y
+    | otherwise = 0
+
+isPrime :: Int -> Bool
+isPrime x = [x] == [ y | y <- [2..x], rem x y == 0]
+
+primeFactorization :: Int -> [(Int, Int)]
+primeFactorization x = [ (y, times x y) | y <- [2..x], isPrime y, rem x y == 0]
+
+main = do
+  rawN <- getLine
+  let n = read rawN
+  print $ primeFactorization n
+```
+
+We have a new part - `let n = read rawN`
+
+Now, we have two things to consider in our main:
+
+* The `<-` operator takes the pure value from a `IO` operation
+* `let` with `=` can create new pure value from another pure value. You cannot take value from `IO` operation.
+
+This is it. Now we have the basic stuff.

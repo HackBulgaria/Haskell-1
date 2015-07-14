@@ -29,7 +29,7 @@ Cloud based IDE for Haskell - [www.fpcomplete.com](https://www.fpcomplete.com)
 ## Simple example
 
 ```haskell
-{-# LANGUAGE TypeFamilies, QuasiQuotes, TemplateHaskell #-}
+{-# LANGUAGE TypeFamilies, QuasiQuotes, TemplateHaskell, OverloadedStrings #-}
 module Main where
 
 import Yesod
@@ -50,11 +50,12 @@ Can also be found here:  https://www.fpcomplete.com/user/varosi/minimalistic-yes
 
 ## cabal install
 
-Note that it could take 15min on Core i7 first time for Yesod libraries to build.
+Note that it could take 15min on Core i7 first time for Yesod libraries to build. And it is good to use GHC >=7.8.x and cabal >= 1.18.
 
 1. wget https://www.stackage.org/lts/cabal.config
-2. cabal sandbox init
-3. cabal install
+2. cabal update
+3. cabal sandbox init
+4. cabal install
 
 ## Preparation
 
@@ -68,7 +69,7 @@ Search help install:
 ## Tasks
 
 1. Make basic example run
-2. Modify basic example say "Hey, " and your name answering on /hey/{YourName}
+2. Modify basic example say "Hey, " and your name answering on /hey/#String
 3. Show Mandelbrot fractal on /mandelbrot
 4. Pass fractal image size on URL
 

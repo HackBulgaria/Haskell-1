@@ -48,7 +48,7 @@ Just ('H', "igh five!")
 Nothing
 >
 > parse openingBrace "(++i)"
-Just ('+', "+i")
+Just ('+', "+i)")
 >
 > parse (inBraces $ char '+') "(+)"
 Just ('+', "")

@@ -226,6 +226,13 @@ infixl 4 <$>
 
 So, the `Functor`, as all other typeclasses, gives us an abstraction. All `Functor`s, such as `List`s and `Maybe`s can be `fmap`ed over.
 
+##### Functor Laws
+
+```haskell
+fmap id      = id              -- Identity
+fmap (f . g) = fmap f . fmap g -- Composition
+```
+
 #### The `Applicative`
 
 Okay. For now, the `Functor` typeclass seems pretty rich.
@@ -291,6 +298,16 @@ So, for `Applicative Maybe`, the logical `pure` would act as:
 Just 2
 ```
 
+##### Applicative Laws
+
+```haskell
+pure id <*> v     = v                -- Identity
+pure f <*> pure x = pure (f x)       -- Homomorphism
+u <*> pure y      = pure ($ y) <*> u -- Interchange
+pure (.) <*>
+    u <*> v <*> w = u <*> (v <*> w)  -- Composition
+```
+
 [Now go write some Haskell!](./2-Applicatives/README.md#01-the-binary-tree-functor)
 
 Some trickies:
@@ -321,3 +338,7 @@ instance Alternative Maybe where
 ```
 
 [Back to code!](./2-Applicatives/README.md#03-simple-parser)
+
+** Additional materials: **
+* [Learn You A Haskell](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)
+* [In pictures!](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)

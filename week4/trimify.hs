@@ -2,7 +2,7 @@ import System.IO
 import System.Environment 
 -- 1. Чета файла по някакъв начин
 -- 2. Имам [String]
--- 3. Махам от всеки String whitespacea
+-- 3. Махам от всеки String whitespace-a
 -- 4. Пиша обратно
 
 trim :: String -> String
@@ -23,4 +23,3 @@ main = do
   contents <- hGetContents handle
   hClose handle
   writeFile fileName (trimFile contents)
-

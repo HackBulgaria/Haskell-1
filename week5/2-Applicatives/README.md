@@ -13,7 +13,7 @@ data BTree a = Node a (BTree a) (BTree a) | Leaf a | Nil
 
 ### 03. Simple Parser
 #### Implement the following parser datatype:
-(Check the file [`Parser.hs'](./Parser.hs)
+(Check the file [`Parser.hs'](./Parser.hs))
 
 ```haskell
 newtype Parser a =

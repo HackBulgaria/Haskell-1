@@ -28,6 +28,10 @@ closingBrace = undefined
 inBraces :: Parser a -> Parser a
 inBraces p = openingBrace *> p <* closingBrace
 
+instance Alternative Parser where
+  empty = undefined
+  (<|>) = undefined
+
 oneOrMore, zeroOrMore  :: Parser a -> Parser [a]
 oneOrMore = undefined
 

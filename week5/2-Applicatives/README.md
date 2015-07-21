@@ -19,16 +19,16 @@ data BTree a = Node a (BTree a) (BTree a) | Leaf a | Nil
 newtype Parser a =
   Parser { parse :: String -> Maybe (a, String) }
 
-instance Functor Parser where
-
-instance Applicative Parser where
-
 satisfy :: (Char -> Bool) -> Parser Char
 char :: Char -> Parser Char
 openingBrace :: Parser Char
 closingBrace :: Parser Char
 
 inBraces :: Parser a -> Parser a
+
+instance Functor Parser where
+
+instance Applicative Parser where
 
 instance Alternative Parser where
 

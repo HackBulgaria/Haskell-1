@@ -2,9 +2,13 @@ module Parser where
 
 
 import Control.Applicative
+import qualified Control.Arrow as A (first)
+-- first (+7) (35, 0) -> (42, 0)
+
 
 newtype Parser a =
   Parser { parse :: String -> Maybe (a, String) }
+
 
 instance Functor Parser where
   fmap f (Parser p) = undefined
@@ -27,6 +31,7 @@ closingBrace = undefined
 
 inBraces :: Parser a -> Parser a
 inBraces p = openingBrace *> p <* closingBrace
+
 
 instance Alternative Parser where
   empty = undefined

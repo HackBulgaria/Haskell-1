@@ -4,6 +4,13 @@
 ### 01. An expression parser
 #### Now using the already written simple parser, write a statement parser!
 
+##### Note: If you didn't complete the previous tasks, here are some modules you can use:
+* [Interpreter](./Interpreter.hs)
+* [Statement](./Statement.hs)
+* [Parser](./Parser.hs)
+
+Your task is to implement the functions from the [StatementParser](./StatementParser.hs) file.
+
 ```haskell
 interpret :: Parser [Statement]
 ```

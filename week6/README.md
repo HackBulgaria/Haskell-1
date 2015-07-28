@@ -78,7 +78,7 @@ class Monad m where
 * The `List` monad
 * The `IO` monad
 
-Let's do some [monad work](./2-Monads/README.md#01-instances) now!
+Next time we'll do some monad work!
 
 ** Additional materials: **
 * [Learn You A Haskell](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)

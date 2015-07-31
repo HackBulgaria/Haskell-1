@@ -2,7 +2,7 @@
 
 [Day 1](./README.md#day-1)
 
-Day 2
+[Day 2](./README.md#day-2)
  
 ## Day 1
 
@@ -52,6 +52,10 @@ newtype Writer w a =
 
 [Tasks](./2-Writer/README.md#01-the-writer)
 
+## Day 2
+
+There will be no new material today!
+We will finish our [`Writer` monad task](./2-Writer/README.md#03-calculator) and then recall what we've learnt since the beginning of the course.
 
 ** Additional materials: **
 * [Learn You A Haskell](http://learnyouahaskell.com/a-fistful-of-monads)

@@ -27,7 +27,7 @@ for (var i = 0; i < 10; ++i) {
 ```
 > content <- readFile "test"
 > parse interpret content
-[Assign "sum" (Val 0), For (Assign "i" (Val 0)) (Op (Var "i") Lt (Val 10)) (Incr "i") (Assign "sum" (Op (Var "sum") Plus (Var "i")))]
+Just ([Assign "sum" (Val 0), For (Assign "i" (Val 0)) (Op (Var "i") Lt (Val 10)) (Incr "i") (Assign "sum" (Op (Var "sum") Plus (Var "i")))], "")
 ```
 
 ** Hints **

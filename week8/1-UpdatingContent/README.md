@@ -1,3 +1,8 @@
+## Stack
+### Preparation
+ 1. Go to https://github.com/commercialhaskell/stack
+ 2. Install stack on your working path
+
 ## Updating Content
 
 As a fellow Haskellers, we want to know how to develop a game in Haskell.

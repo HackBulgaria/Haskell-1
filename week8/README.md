@@ -96,4 +96,4 @@ innerText :: StringLike str => [Tag str] -> str
 "42"
 ```
 
-Now go on with the [task](./01-updating-content)
+Now go on with the [task](./1-updating-content)

@@ -20,3 +20,21 @@ We will want to know when the book will be completed and if there are any new ch
 #### Notes: 
 * There will be a file `last-toc` or something like that in which you will store the information from the last visit. For the first time (or if you've deleted the file) of course, it will not be present, so you'll have to manage that case too.
 * Think carefully about the easiest ways to get the contents we want and to store the information we get.
+
+### Some guidelines:
+* Remember to setup cabal first:
+```
+cabal sandbox init
+cabal init
+cabal install
+cabal build
+```
+Of course, before `cabal install` you should change the dependencies in the `.cabal` file
+
+* For debugging, you should use `cabal repl`. It will load all needed modules. Just working with `ghci` or `runhaskell` won't work, because they will look for the libraries in the global ghc directory, while `cabal repl` looks in the sandbox too.
+
+* Try writing the task on your own before looking at the solution.
+
+### Hints:
+* Your first task is to get the content of the page.
+* Then inspect it carefully and think about the possible ways to get only the content that is important for us.

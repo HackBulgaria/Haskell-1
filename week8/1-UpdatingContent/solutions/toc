@@ -1,0 +1,62 @@
+Introduction
+Doing things the hard way
+Haskell
+Game
+Aim of this book
+Prerequisite
+Contents
+Thanks
+Chapter 1: Introducing graphics with Gloss and GLFW
+Why Gloss and GLFW
+The Canvas
+Gloss’ under the hood initialization
+The Loop
+Let’s draw something
+What next?
+Chapter 2: State with FRP
+No life without state
+FRP
+Transform our example
+Monsters!
+Other modules of Elerea
+Dynamic graphs, and levels
+Animations
+Ready to go
+Chapter 3: Textures and animations
+Textures: using images in the game
+Bringing life to the characters
+Animations: stop motion
+Animations: skeletal animation and transformations
+Advanced animation
+The world is a bigger place: viewport
+Nearly there
+Chapter 4: Sound
+Challenges
+Let’s code
+Advanced Sound
+Next: Miscellanea
+Chapter 5: Making it into a real game
+Directory structure
+The knight fights back
+A full game: start screen, levels, scoring
+Window size management
+Next: testing
+Chapter 6: Testing
+Revisiting directory structure, changes to cabal file
+Unit tests
+QuickCheck
+Enabling user tests: starting from a given point in the game
+Recording the action - and replaying it
+“Scripting” the game
+Next: TBD
+Appendix A: Installation on Mac
+Homebrew
+GLFW
+FTGL
+ALUT
+Appendix B: useful tips for Haskell development
+Sandboxes
+Warnings
+Linter
+Staying up to date
+An amazing resource

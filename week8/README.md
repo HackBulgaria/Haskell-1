@@ -97,3 +97,7 @@ innerText :: StringLike str => [Tag str] -> str
 ```
 
 Now go on with the [task](./1-UpdatingContent/README.md)
+
+## Day 2
+
+#### [The last task for the course](./2-Hahoo/README.md)
